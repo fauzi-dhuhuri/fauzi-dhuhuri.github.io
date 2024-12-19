@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Tensorflow.js: Sentiment Analysis Demo </title>
+    
+    <link href="styles/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>      
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>  
+    <link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'> 
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+    <div class = "header">
+      <img src="styles/logo.png"></img>
+    </div>
+    
+    <!-- Add a <div> tag with the "main" class -->
+
+    
+    <div class="container">
+    <div class = "demo">
+      <h1 class = "title">
+        <span class="title-word title-word-1">Terima</span>
+        <span class="title-word title-word-2">Kasih</span>
+        <span class="title-word title-word-3">Atas</span>
+        <span class="title-word title-word-4">Kunjungannya</span>
+      </h1>
+      <h2>Kami berkomitmen untuk memberikan pengalaman yang luar biasa kepada pelanggan kami, dan masukan Anda membantu kami mewujudkannya.</h2>
+      <br><br>
+      <div id="loaderlabel"<h2>Loading Model...</h2></div>
+      <div id="loader"> </div>   
+      <div style="display:none;" id="mainAPP">
+      <label for="input">Bagaimana McDonald Duren Sawit yang melayani kepada Anda? </label><br><br>
+      <input placeholder="Try: 'Enak'" id="input">
+      <button class="button" style="vertical-align:middle"><span>Post Review </span></button>
+      <p></p>
+    </div>     
+    </div>  
+          
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0"></script>
+      <!-- Memanggil script.js -->
+      <script src="script.js"></script>
+      <!--  -->
+  </body>
+</html>
